@@ -4,3 +4,18 @@
 
 
 ################## On Chat Commands Section #####################
+
+
+def teleport():
+    agent.teleport_to_player()
+
+player.on_chat("tp", teleport)
+
+def turnleft():
+    agent.turn(LEFT)
+
+player.on_chat("tl", turnleft)
+
+def on_right():
+    agent.turn(RIGHT)
+player.on_chat("tr",on_right)
